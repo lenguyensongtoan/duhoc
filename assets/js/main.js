@@ -1,0 +1,3 @@
+function trick() {
+    alert('a')
+}
