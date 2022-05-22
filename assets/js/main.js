@@ -1,10 +1,11 @@
 $(document).ready(function () {
-    $('.homepageCarousel').slick({
-        dots: true,
+    $('.banner-carousel').slick({
         infinite: true,
         speed: 1000,
         fade: true,
-        cssEase: 'linear'
+        cssEase: 'linear',
+        autoplay: true,
+        autoplaySpeed: 2000,
     });
 });
 
@@ -17,7 +18,7 @@ $(document).ready(function () {
 });
 
 $(document).ready(function () {
-    $('.link_sldr').slick({
+    $('.countries').slick({
         slidesToShow: 4,
         slidesToScroll: 4,
     });
