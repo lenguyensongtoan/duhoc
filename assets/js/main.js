@@ -11,15 +11,87 @@ $(document).ready(function () {
 
 $(document).ready(function () {
     $('.video_qa').slick({
+        dots: true,
+        infinite: true,
         slidesToShow: 4,
         slidesToScroll: 4,
-        dots: true,
+        responsive: [
+            {
+                breakpoint: 767,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2,
+                    infinite: true,
+                    dots: true,
+                    centerMode: true,
+                    arrows: false,
+                    centerPadding: 0,
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    dots: true,
+                    centerMode: true,
+                    arrows: false,
+                    centerPadding: 0,
+                }
+            }
+        ]
     });
 });
 
 $(document).ready(function () {
     $('.countries').slick({
+        dots: false,
+        infinite: false,
         slidesToShow: 4,
-        slidesToScroll: 4,
+        slidesToScroll: 2,
+        variableWidth: true,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 4,
+                    slidesToScroll: 2,
+                    variableWidth: true,
+                    infinite: false,
+                    dots: false,
+                    centerMode: true,
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    variableWidth: true,
+                    infinite: true,
+                    dots: false,
+                    centerMode: true,
+                    arrows: false,
+                    centerPadding: 0,
+                }
+            }
+        ]
     });
 });
+
+function showMenu(menuItem) {
+    var $menuItem = $(menuItem);
+    var $mainNav = $('.js_navigation--bottom');
+    $menuItem.addClass("show-sub");
+    lazyloadetStarts();
+    $menuItem.siblings().removeClass("show-sub");
+}
+$(document).ready(function () {
+    $("nav.navigation--bottom > .navigation__overflow > ul > li").mouseover(function () {
+        showMenu(this)
+    });
+    $("nav.navigation--bottom > .navigation__overflow > ul > li").mouseleave(function () {
+        $(this).removeClass("show-sub");
+    });
+})
