@@ -95,3 +95,14 @@ $(document).ready(function () {
         $(this).removeClass("show-sub");
     });
 })
+$(document).on("click", ".js-toggle-sm-navigation", function () {
+    toggleClassState($("main"), "offcanvas");
+    toggleClassState($("html"), "offcanvas");
+    toggleClassState($("body"), "offcanvas");
+    
+});
+
+function toggleClassState($e, c) {
+    $e.hasClass(c) ? $e.removeClass(c) : $e.addClass(c);
+    return $e.hasClass(c);
+}

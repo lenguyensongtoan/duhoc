@@ -1,16 +1,6 @@
 @import url(../common/layout.css);
 @import url(../common/common.css);
-.glyphicon {
-  position: relative;
-  top: 1px;
-  display: inline-block;
-  font-family: "Glyphicons Halflings";
-  font-style: normal;
-  font-weight: normal;
-  line-height: 1;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+
 .btn_insti {
   width: 180px;
   padding: 13px 15px 11px;
@@ -33,7 +23,7 @@
   color: #fff;
 }
 .btn_insti.btn-grn-grad {
-  background: transparent linear-gradient(90deg, #388062 0%, #73b757 100%) 0% 0%
+  background:  linear-gradient(to right, #e44d64 0%, #f5a92e 100%)
     no-repeat padding-box;
   color: #fff;
 }
@@ -1449,7 +1439,7 @@ ul.ui-autocomplete li.ui-state-focus {
   margin-bottom: 0 !important;
 }
 .main-header .navigation--top {
-  display: none;
+  display: block;
 }
 .main-header .navigation--middle .container-fluid {
   max-width: 1170px;
@@ -1613,7 +1603,7 @@ ul.ui-autocomplete li.ui-state-focus {
   .site-search
   .ui-front
   .input-group
-  .srch_bx {
+  .search-box {
   width: 100%;
   border: 0;
   border-bottom: 2px solid #999fab;
@@ -1629,7 +1619,7 @@ ul.ui-autocomplete li.ui-state-focus {
   .site-search
   .ui-front
   .input-group
-  .srch_bx
+  .search-box
   span {
   display: block;
   font-size: 16px;
@@ -1647,7 +1637,7 @@ ul.ui-autocomplete li.ui-state-focus {
   .site-search
   .ui-front
   .input-group
-  .srch_bx
+  .search-box
   span.glyphicon-search {
   margin: 0;
   font-size: 20px;
@@ -1827,7 +1817,7 @@ ul.ui-autocomplete li.ui-state-focus {
   li.ofc_loc.cntry_sel:hover
   .user_menu
   .user_options
-  .liOffcanvas2 {
+  .canvas-li {
   margin: 0 !important;
   font-size: 14px !important;
   text-transform: none;
@@ -1845,7 +1835,7 @@ ul.ui-autocomplete li.ui-state-focus {
   li.ofc_loc.cntry_sel:hover
   .user_menu
   .user_options
-  .liOffcanvas2.spliter {
+  .canvas-li.spliter {
   border-top: 1px solid #e9e9e9;
   margin: 10px 0 !important;
   line-height: 10px;
@@ -1859,7 +1849,7 @@ ul.ui-autocomplete li.ui-state-focus {
   li.ofc_loc.cntry_sel:hover
   .user_menu
   .user_options
-  .liOffcanvas2:first-child {
+  .canvas-li:first-child {
   padding-left: 0;
 }
 .main-header
@@ -1871,7 +1861,7 @@ ul.ui-autocomplete li.ui-state-focus {
   li.ofc_loc.cntry_sel:hover
   .user_menu
   .user_options
-  .liOffcanvas2:first-child
+  .canvas-li:first-child
   a {
   font-weight: bold;
 }
@@ -1884,7 +1874,7 @@ ul.ui-autocomplete li.ui-state-focus {
   li.ofc_loc.cntry_sel:hover
   .user_menu
   .user_options
-  .liOffcanvas2
+  .canvas-li
   a {
   position: relative !important;
   padding: 4px 10px !important;
@@ -1928,7 +1918,7 @@ ul.ui-autocomplete li.ui-state-focus {
   .desktop__nav
   .nav__right.md-secondary-navigation
   ul.nav__links
-  li.usr_ar {
+  li.user-icon {
   position: relative;
 }
 .main-header
@@ -1937,7 +1927,7 @@ ul.ui-autocomplete li.ui-state-focus {
   .desktop__nav
   .nav__right.md-secondary-navigation
   ul.nav__links
-  li.usr_ar
+  li.user-icon
   img {
   border-radius: 100%;
   object-fit: cover;
@@ -1948,7 +1938,7 @@ ul.ui-autocomplete li.ui-state-focus {
   .desktop__nav
   .nav__right.md-secondary-navigation
   ul.nav__links
-  li.usr_ar:hover
+  li.user-icon:hover
   .user_menu {
   display: block;
 }
@@ -1958,9 +1948,9 @@ ul.ui-autocomplete li.ui-state-focus {
   .desktop__nav
   .nav__right.md-secondary-navigation
   ul.nav__links
-  li.usr_ar:hover
+  li.user-icon:hover
   .user_menu
-  li.liOffcanvas2 {
+  li.canvas-li {
   margin-left: 0px !important;
   text-align: center !important;
 }
@@ -1970,7 +1960,7 @@ ul.ui-autocomplete li.ui-state-focus {
   .desktop__nav
   .nav__right.md-secondary-navigation
   ul.nav__links
-  li.usr_ar:hover
+  li.user-icon:hover
   .user_menu
   li
   a {
@@ -2322,7 +2312,7 @@ header.main-header .content .phonecnt {
   border-bottom: 1px solid #999fab;
 }
 .srch_ovly .srtabs .srbtn {
-  background: transparent linear-gradient(90deg, #388062 0%, #73b757 100%) 0% 0%
+  background: transparent  linear-gradient(to right, #e44d64 0%, #f5a92e 100%)
     no-repeat padding-box;
   font-size: 18px;
   padding: 10px 20px 10px;
@@ -2497,10 +2487,7 @@ header.main-header .content .phonecnt {
 }
 @media (max-width: 1024px) {
   main.offcanvas {
-    position: relative;
-    -webkit-transform: translate(380px, 0);
-    -ms-transform: translate(380px, 0);
-    -o-transform: translate(380px, 0);
+    position: fixed;
     transform: translate(380px, 0);
   }
   .sticky-nav-top {
@@ -2580,7 +2567,7 @@ header.main-header .content .phonecnt {
     .desktop__nav
     .nav__right.md-secondary-navigation
     ul.nav__links
-    li.usr_ar
+    li.user-icon
     img {
     width: 37px;
     height: 37px;
@@ -3042,7 +3029,7 @@ header.main-header .content .phonecnt {
   .site-search
   .ui-front
   .input-group
-  .srch_bx {
+  .search-box {
   border-bottom: 1px solid #999fab;
 }
 .main-header.main-new-header
@@ -3054,7 +3041,7 @@ header.main-header .content .phonecnt {
   .site-search
   .ui-front
   .input-group
-  .srch_bx
+  .search-box
   span {
   padding: 10px 10px 10px 40px;
   font-size: 20px;
@@ -3068,17 +3055,19 @@ header.main-header .content .phonecnt {
   .search_area
   .site-search
   .ui-front
-  .input-group
-  .srch_bx
-  span.srchicon {
+  .search-box
+  span.search-icon {
   position: absolute;
   cursor: pointer;
-  top: 40%;
+  top: 50%;
   transform: translateY(-40%);
   right: auto;
-  left: 0px;
+  left: 0%;
   padding: 0px;
   max-width: 20px;
+}
+.input-group {
+  position: relative;
 }
 .main-header.main-new-header
   .navigation--middle
@@ -3296,7 +3285,7 @@ header.main-header .content .phonecnt {
   .desktop__nav
   .nav__right.md-secondary-navigation
   .user_area.nav__links
-  li.usr_ar
+  li.user-icon
   a {
   box-shadow: 13px 20px 25px #ffffff30;
   border: 2px solid #5d5d5d;
@@ -3312,7 +3301,7 @@ header.main-header .content .phonecnt {
   .desktop__nav
   .nav__right.md-secondary-navigation
   .user_area.nav__links
-  li.usr_ar
+  li.user-icon
   a
   span {
   font-size: 22px;
@@ -3324,7 +3313,7 @@ header.main-header .content .phonecnt {
   .desktop__nav
   .nav__right.md-secondary-navigation
   .user_area.nav__links
-  li.usr_ar
+  li.user-icon
   a
   img {
   border-radius: 0;
@@ -3335,7 +3324,7 @@ header.main-header .content .phonecnt {
   .desktop__nav
   .nav__right.md-secondary-navigation
   .user_area.nav__links
-  li.usr_ar
+  li.user-icon
   a
   .user_grey {
   display: inline-block;
@@ -3346,7 +3335,7 @@ header.main-header .content .phonecnt {
   .desktop__nav
   .nav__right.md-secondary-navigation
   .user_area.nav__links
-  li.usr_ar
+  li.user-icon
   a
   .user_white {
   display: none;
@@ -3357,7 +3346,7 @@ header.main-header .content .phonecnt {
   .desktop__nav
   .nav__right.md-secondary-navigation
   .user_area.nav__links
-  li.usr_ar:hover
+  li.user-icon:hover
   > a {
   background: #5d5d5d;
 }
@@ -3367,7 +3356,7 @@ header.main-header .content .phonecnt {
   .desktop__nav
   .nav__right.md-secondary-navigation
   .user_area.nav__links
-  li.usr_ar:hover
+  li.user-icon:hover
   > a
   .usr_txt {
   color: #fff;
@@ -3378,7 +3367,7 @@ header.main-header .content .phonecnt {
   .desktop__nav
   .nav__right.md-secondary-navigation
   .user_area.nav__links
-  li.usr_ar:hover
+  li.user-icon:hover
   > a
   .user_grey {
   display: none;
@@ -3389,7 +3378,7 @@ header.main-header .content .phonecnt {
   .desktop__nav
   .nav__right.md-secondary-navigation
   .user_area.nav__links
-  li.usr_ar:hover
+  li.user-icon:hover
   > a
   .user_white {
   display: inline-block;
@@ -3400,7 +3389,7 @@ header.main-header .content .phonecnt {
   .desktop__nav
   .nav__right.md-secondary-navigation
   .user_area.nav__links
-  li.usr_ar
+  li.user-icon
   .user_menu {
   left: auto;
   right: 0;
@@ -3416,7 +3405,7 @@ header.main-header .content .phonecnt {
   .desktop__nav
   .nav__right.md-secondary-navigation
   .user_area.nav__links
-  li.usr_ar
+  li.user-icon
   .user_menu
   .glyphicon {
   top: -4px;
@@ -3427,7 +3416,7 @@ header.main-header .content .phonecnt {
   .desktop__nav
   .nav__right.md-secondary-navigation
   .user_area.nav__links
-  li.usr_ar
+  li.user-icon
   .user_menu
   .user_options {
   background: #fff;
@@ -3442,7 +3431,7 @@ header.main-header .content .phonecnt {
   .desktop__nav
   .nav__right.md-secondary-navigation
   .user_area.nav__links
-  li.usr_ar
+  li.user-icon
   .user_menu
   .user_options
   li {
@@ -3455,7 +3444,7 @@ header.main-header .content .phonecnt {
   .desktop__nav
   .nav__right.md-secondary-navigation
   .user_area.nav__links
-  li.usr_ar
+  li.user-icon
   .user_menu
   .user_options
   li
@@ -3479,7 +3468,7 @@ header.main-header .content .phonecnt {
   .nav-new-mega-menu
   .nav-new-menu-items
   .mega-menu-bg {
-  background: transparent linear-gradient(94deg, #1e202b 0%, #545454 100%) 0% 0%
+  background: transparent linear-gradient(94deg, #7c52fc 0%, #49ccfa 100%) 0% 0%
     no-repeat padding-box;
   border-radius: 30px;
   box-shadow: 13px 20px 25px #6d6d6d30;
@@ -3897,7 +3886,7 @@ header.main-header .content .phonecnt {
     .site-search
     .ui-front
     .input-group
-    .srch_bx
+    .search-box
     span {
     font-size: 18px;
   }
@@ -3991,7 +3980,7 @@ header.main-header .content .phonecnt {
     .site-search
     .ui-front
     .input-group
-    .srch_bx
+    .search-box
     span {
     font-size: 16px;
   }
@@ -4022,7 +4011,7 @@ header.main-header .content .phonecnt {
     .desktop__nav
     .nav__right.md-secondary-navigation
     .user_area.nav__links
-    li.usr_ar
+    li.user-icon
     a {
     min-width: 160px;
   }
@@ -4032,7 +4021,7 @@ header.main-header .content .phonecnt {
     .desktop__nav
     .nav__right.md-secondary-navigation
     .user_area.nav__links
-    li.usr_ar
+    li.user-icon
     a
     span {
     font-size: 20px;
@@ -4274,7 +4263,7 @@ header.main-header .content .phonecnt {
     .site-search
     .ui-front
     .input-group
-    .srch_bx
+    .search-box
     span {
     font-size: 14px;
   }
@@ -4348,7 +4337,7 @@ header.main-header .content .phonecnt {
     .desktop__nav
     .nav__right.md-secondary-navigation
     .user_area.nav__links
-    li.usr_ar
+    li.user-icon
     a
     img {
     width: auto;
@@ -4360,7 +4349,7 @@ header.main-header .content .phonecnt {
     .desktop__nav
     .nav__right.md-secondary-navigation
     .user_area.nav__links
-    li.usr_ar
+    li.user-icon
     a
     .usr_txt {
     display: block !important;
@@ -4550,7 +4539,7 @@ header.main-header .content .phonecnt {
     .desktop__nav
     .nav__right.md-secondary-navigation
     .user_area.nav__links
-    li.usr_ar
+    li.user-icon
     a {
     min-width: inherit;
     padding: 10px 0 !important;
@@ -4563,7 +4552,7 @@ header.main-header .content .phonecnt {
     .desktop__nav
     .nav__right.md-secondary-navigation
     .user_area.nav__links
-    li.usr_ar
+    li.user-icon
     a
     .usr_txt {
     display: none !important;
@@ -4574,7 +4563,7 @@ header.main-header .content .phonecnt {
     .desktop__nav
     .nav__right.md-secondary-navigation
     .user_area.nav__links
-    li.usr_ar
+    li.user-icon
     a
     img {
     width: auto;
@@ -5241,7 +5230,7 @@ header.main-header .content .phonecnt {
   }
 }
 .app_promo {
-  background: #3b4247;
+  background: #2ac5ff;
 }
 .app_promo .container-fluid {
   width: 100%;
@@ -5435,7 +5424,7 @@ header.main-header .content .phonecnt {
   max-width: 580px;
   color: #fff;
   border-radius: 0 100px 100px 0;
-  background: linear-gradient(90deg, #2630a8 0%, #0086f8 100%);
+  background: linear-gradient(90deg, #7c52fc 0%, #49ccfa 100%);
   padding: 25px 50px 28px;
   width: 80%;
   z-index: 99;
@@ -5740,7 +5729,7 @@ header.main-header .content .phonecnt {
   left: 0;
 }
 .rfrmbtm .btn {
-  background: transparent linear-gradient(90deg, #388062 0%, #73b757 100%) 0% 0%
+  background: linear-gradient(to right, #e44d64 0%, #f5a92e 100%) 
     no-repeat padding-box;
   border: none;
   color: #fff;
@@ -5773,7 +5762,8 @@ header.main-header .content .phonecnt {
   left: 0;
   opacity: 0;
   top: 0px;
-  background: #008260;
+  background: linear-gradient(to right, #ec2946 0%, #e99713 100%) 
+  no-repeat padding-box;
   height: 45px;
   padding: 13px 21px 11px;
   border-radius: 30px;
@@ -5781,7 +5771,7 @@ header.main-header .content .phonecnt {
   height: 100%;
 }
 .rfrmbtm .btn:hover {
-  background: #008260;
+  background: linear-gradient(to right, #ec2946 0%, #e99713 100%) 
 }
 .rfrmbtm .btn:hover::before {
   width: 100%;
@@ -7116,9 +7106,9 @@ p:last-child {
   display: inline-block;
   color: #ffffff;
   border-radius: 25px;
-  background: url(../../../../common/images/right-arrow-white.png) 94% 45%
+  background: url(../../img/icons/right-arrow-white.png) 94% 45%
       no-repeat,
-    linear-gradient(to right, #e11937 0%, #ff8300 100%);
+    linear-gradient(to right, #e44d64 0%, #f5a92e 100%);
   font-size: 18px;
   line-height: 2.444;
   padding-right: 50px;
@@ -7131,8 +7121,8 @@ p:last-child {
   display: none;
 }
 .page-homepage .banner-carousel .carousel-link a:hover {
-  background: url(../../../../common/images/right-arrow-white.png) 94% 45%
-    no-repeat #ff8300;
+  background: url(../../img/icons/right-arrow-white.png) 94% 45%
+    no-repeat #f5a92e;
 }
 .page-homepage .banner-carousel .carousel-link h3 {
   font-weight: normal;
@@ -7940,14 +7930,14 @@ p:last-child {
     padding: 0 15px;
   }
 }
-.page-homepage .testimonial .testimonial-title .yComponentWrapper {
+.page-homepage .testimonial .testimonial-title .component-wrapper {
   padding: 0 !important;
 }
 @media (max-width: 767px) {
   .page-homepage .testimonial {
     padding: 0px 15px;
   }
-  .page-homepage .testimonial .testimonial-title .yComponentWrapper {
+  .page-homepage .testimonial .testimonial-title .component-wrapper {
     padding: 0 !important;
   }
   .page-homepage .testimonial .testimonial-video .image-section {
@@ -8863,7 +8853,7 @@ p:last-child {
   position: relative;
   left: 10px;
 }
-.next-step div.yCmsContentSlot:nth-child(2) > div {
+.next-step div.content-slot:nth-child(2) > div {
   float: left;
 }
 @media (min-width: 1025px) {
@@ -8922,7 +8912,7 @@ p:last-child {
   .dynmc_art .dynmcart_cnt {
     font-size: 14px;
   }
-  .page-search .next-step div.yCmsContentSlot:nth-child(2) > .dynmc_art {
+  .page-search .next-step div.content-slot:nth-child(2) > .dynmc_art {
     width: calc(100% - 20px);
   }
 }
@@ -9040,7 +9030,7 @@ p:last-child {
   .page-homepage .home-course-list .popularCoursesHover {
     padding: 0px 15px;
   }
-  .page-homepage .home-course-list .popularCoursesHover .yComponentWrapper {
+  .page-homepage .home-course-list .popularCoursesHover .component-wrapper {
     width: 100%;
     border: 2px solid #f2f3f7;
   }
@@ -9051,7 +9041,7 @@ p:last-child {
   }
 }
 @media (min-width: 480px) and (max-width: 767px) {
-  .page-homepage .home-course-list .popularCoursesHover .yComponentWrapper {
+  .page-homepage .home-course-list .popularCoursesHover .component-wrapper {
     width: 50%;
   }
 }
@@ -9060,7 +9050,7 @@ p:last-child {
 .page-homepage .home-university-section {
   position: relative;
 }
-.page-homepage .hero-features .yComponentWrapper {
+.page-homepage .hero-features .component-wrapper {
   margin-bottom: 20px;
 }
 .page-homepage .hero-features .content {
@@ -9109,12 +9099,12 @@ p:last-child {
     .home-university-section
     .heroImages-box:nth-child(2)
     .hero-features
-    .yComponentWrapper,
+    .component-wrapper,
   .page-homepage
     .partners-section
     .heroImages-box:nth-child(2)
     .hero-features
-    .yComponentWrapper {
+    .component-wrapper {
     width: 43%;
     margin-right: 20px;
     margin-bottom: 20px;
@@ -9123,13 +9113,13 @@ p:last-child {
     .home-university-section
     .heroImages-box:nth-child(2)
     .hero-features
-    .yComponentWrapper
+    .component-wrapper
     .University-list,
   .page-homepage
     .partners-section
     .heroImages-box:nth-child(2)
     .hero-features
-    .yComponentWrapper
+    .component-wrapper
     .University-list {
     padding: 0px;
   }
@@ -9137,7 +9127,7 @@ p:last-child {
     .home-university-section
     .heroImages-box:nth-child(2)
     .hero-features
-    .yComponentWrapper
+    .component-wrapper
     .University-list
     li
     .left-box,
@@ -9145,7 +9135,7 @@ p:last-child {
     .partners-section
     .heroImages-box:nth-child(2)
     .hero-features
-    .yComponentWrapper
+    .component-wrapper
     .University-list
     li
     .left-box {
@@ -9155,7 +9145,7 @@ p:last-child {
     .home-university-section
     .heroImages-box:nth-child(2)
     .hero-features
-    .yComponentWrapper
+    .component-wrapper
     .University-list
     li
     .left-box
@@ -9164,7 +9154,7 @@ p:last-child {
     .partners-section
     .heroImages-box:nth-child(2)
     .hero-features
-    .yComponentWrapper
+    .component-wrapper
     .University-list
     li
     .left-box
@@ -9184,12 +9174,12 @@ p:last-child {
     .home-university-section
     .heroImages-box:nth-child(2)
     .hero-features
-    .yComponentWrapper,
+    .component-wrapper,
   .page-homepage
     .partners-section
     .heroImages-box:nth-child(2)
     .hero-features
-    .yComponentWrapper {
+    .component-wrapper {
     width: 22%;
     margin-right: 19px;
     margin-bottom: 20px;
@@ -9198,13 +9188,13 @@ p:last-child {
     .home-university-section
     .heroImages-box:nth-child(2)
     .hero-features
-    .yComponentWrapper
+    .component-wrapper
     .University-list,
   .page-homepage
     .partners-section
     .heroImages-box:nth-child(2)
     .hero-features
-    .yComponentWrapper
+    .component-wrapper
     .University-list {
     padding: 0px;
   }
@@ -9212,7 +9202,7 @@ p:last-child {
     .home-university-section
     .heroImages-box:nth-child(2)
     .hero-features
-    .yComponentWrapper
+    .component-wrapper
     .University-list
     li
     .left-box,
@@ -9220,7 +9210,7 @@ p:last-child {
     .partners-section
     .heroImages-box:nth-child(2)
     .hero-features
-    .yComponentWrapper
+    .component-wrapper
     .University-list
     li
     .left-box {
@@ -9230,7 +9220,7 @@ p:last-child {
     .home-university-section
     .heroImages-box:nth-child(2)
     .hero-features
-    .yComponentWrapper
+    .component-wrapper
     .University-list
     li
     .left-box
@@ -9239,7 +9229,7 @@ p:last-child {
     .partners-section
     .heroImages-box:nth-child(2)
     .hero-features
-    .yComponentWrapper
+    .component-wrapper
     .University-list
     li
     .left-box
@@ -9317,7 +9307,7 @@ p:last-child {
     #0181dc 100%
   );
 }
-.page-homepage .home-review .no-space .yComponentWrapper {
+.page-homepage .home-review .no-space .component-wrapper {
   max-width: 1170px;
   margin: 0 auto;
   float: none;

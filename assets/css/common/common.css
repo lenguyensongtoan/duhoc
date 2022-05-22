@@ -723,7 +723,6 @@ fieldset[disabled] .navbar-inverse .btn-link:hover,
 fieldset[disabled] .navbar-inverse .btn-link:focus {
   color: #444444;
 }
-/*-- New common styles added --*/
 .fl {
   float: left;
 }
@@ -733,7 +732,7 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 .row {
   margin: 0;
 }
-.cls_icon {
+.close-icon {
   display: none;
   float: left;
   padding: 10px;
@@ -745,7 +744,7 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 .no-space .yCmsComponent {
   padding: 0 !important;
 }
-.cls_icon {
+.close-icon {
   display: none;
   float: left;
   padding: 10px;
