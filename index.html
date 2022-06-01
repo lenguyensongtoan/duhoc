@@ -10,10 +10,8 @@
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" rel="stylesheet" />
 	<link rel="stylesheet" type="text/css" href="//use.fontawesome.com/releases/v5.7.2/css/all.css">
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" rel="stylesheet" />
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-	<script src="./assets/js/main.js"></script>
+	<link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+	<link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
 </head>
 
 <body class="page-homepage">
@@ -1207,360 +1205,396 @@
 							</div>
 						</div>
 						<div class="openenq_form">
-							<div class="col-md-6 lftform_cont no-space">
-								<div class="opn_left_img">
-									<img src="./assets/img/counsellor-openform.jpg" class="speak_expert_img"
-										alt="tư vấn du học, học bổng du học, hội thảo du học, chứng minh tài chính du học, chi phí du học, điều kiện du học, du hoc úc, du học canada, du học anh, du học mỹ, du học new zealand, du học nước ngoài">
-								</div>
-								<div class="inner-leftsec wow slideInLeft" data-wow-duration="1s"
-									style="visibility: visible; animation-duration: 1s; animation-name: slideInLeft;">
-									<h2>Bạn muốn du học?</h2>
-									<h3>Hãy trao đổi với chuyên gia tư vấn IDP ngay hôm nay.
-									</h3>
-								</div>
-							</div>
 							<div class="col-md-6 rightfrm_cont no-space">
-								<div class="opnfrm lightbox_wrap">
-									<div class="form-lbnew_wrap">
-										<div class="lb-xclose" style="display:none">
-											<span class="glyphicon glyphicon-remove"></span>
-										</div>
-										<div class="rfrmtop">
-											<div class="rfrmttl">
-												Bạn muốn du học?</div>
-											<div class="rfrmsttl">Hãy trao đổi với chuyên gia tư vấn IDP ngay hôm nay.
+								<div class="lftform_cont no-space">
+									<div class="inner-leftsec wow slideInLeft" data-wow-duration="1s"
+										style="visibility: visible; animation-duration: 1s; animation-name: slideInLeft;">
+										<h2>Bạn muốn du học?</h2>
+										<h3>Hãy trao đổi với chuyên gia tư vấn IDP ngay hôm nay.
+										</h3>
+									</div>
+								</div>
+								<div>
+									<div class="opnfrm lightbox_wrap">
+										<div class="form-lbnew_wrap">
+											<div class="lb-xclose" style="display:none">
+												<span class="glyphicon glyphicon-remove"></span>
 											</div>
-										</div>
-										<form class="rfrmbtm clearfix">
-											<div class="row opnfrm_uname">
-												<div style="display:block" class="floatingwrap ">
-													<div class="form-group">
-														<input id="firstName" name="firstName" class=" form-control"
-															type="text" value="" /><label class="control-label "
-															for="firstName">
-															Tên*</label>
-													</div>
-													<div class="help-block">
-														<span class="errmsg">
-															<span id="first_name_null">Vui lòng nhập tên của bạn</span>
-															<span id="first_name_len">Tên không được quá 40 ký tự</span>
-														</span>
-														<span class="glyphicon"></span>
-													</div>
-												</div>
-												<div style="display:block" class="floatingwrap ">
-													<div class="form-group">
-														<input id="lastName" name="lastName" class=" form-control"
-															type="text" value="" /><label class="control-label "
-															for="lastName">
-															Họ*</label>
-													</div>
-													<div class="help-block">
-														<span class="errmsg">
-															<span id="last_name_null">Vui lòng nhập họ của bạn</span>
-															<span id="last_name_len">Họ không được quá 40 ký tự</span>
-														</span>
-														<span class="glyphicon"></span>
-													</div>
+											<div class="rfrmtop">
+												<div class="rfrmttl">
+													Bạn muốn du học?</div>
+												<div class="rfrmsttl">Hãy trao đổi với chuyên gia tư vấn IDP ngay hôm
+													nay.
 												</div>
 											</div>
-											<div style="display:block" class="floatingwrap opnfrm_email ">
-												<div class="form-group">
-													<input id="emailId" name="emailId" class=" form-control" type="text"
-														value="" /><label class="control-label " for="emailId">
-														Email*</label>
-												</div>
-												<div class="help-block"><span class="errmsg">Vui lòng nhập email hợp
-														lệ</span> <span class="glyphicon"></span></div>
-											</div>
-											<div class="row posrel" style="display:block">
-												<div class="col-md-4 col-xs-3 no-space">
-													<div class="floatingwrap ccode rfrmsuc">
+											<form class="rfrmbtm clearfix">
+												<div class="row opnfrm_uname">
+													<div style="display:block" class="floatingwrap ">
 														<div class="form-group">
-															<input id="dialCode" name="dialCode" class=" form-control"
-																readonly="readonly" type="text" value="+84" /><label
-																class="control-label tpzro hdn_lbl" for="dialCode">
-																Dial code*</label>
-														</div>
-													</div>
-												</div>
-												<div class="col-md-8 col-xs-9 no-space ">
-													<div class="floatingwrap ">
-														<div class="form-group">
-															<input id="phoneNo" name="phoneNo" class=" form-control"
-																type="text" value="" autocomplete="off" /><label
-																class="control-label " for="phoneNo">
-																Điện thoại di động*</label>
+															<input id="firstName" name="firstName" class=" form-control"
+																type="text" value="" /><label class="control-label "
+																for="firstName">
+																Tên*</label>
 														</div>
 														<div class="help-block">
 															<span class="errmsg">
-																<span id="phn_null">Vui lòng nhập số điện thoại hợp
-																	lệ</span>
-																<span id="phn_len">Vui lòng nhập số điện thoại hợp
-																	lệ</span>
+																<span id="first_name_null">Vui lòng nhập tên của
+																	bạn</span>
+																<span id="first_name_len">Tên không được quá 40 ký
+																	tự</span>
+															</span>
+															<span class="glyphicon"></span>
+														</div>
+													</div>
+													<div style="display:block" class="floatingwrap ">
+														<div class="form-group">
+															<input id="lastName" name="lastName" class=" form-control"
+																type="text" value="" /><label class="control-label "
+																for="lastName">
+																Họ*</label>
+														</div>
+														<div class="help-block">
+															<span class="errmsg">
+																<span id="last_name_null">Vui lòng nhập họ của
+																	bạn</span>
+																<span id="last_name_len">Họ không được quá 40 ký
+																	tự</span>
 															</span>
 															<span class="glyphicon"></span>
 														</div>
 													</div>
 												</div>
-											</div>
-											<div class="row opnfrm_stdycntry">
-												<div class="floatingwrap frmdpdn selcntry ">
+												<div style="display:block" class="floatingwrap opnfrm_email ">
 													<div class="form-group">
-														<select id="preferedStudyDestination"
-															name="preferedStudyDestination"
+														<input id="emailId" name="emailId" class=" form-control"
+															type="text" value="" /><label class="control-label "
+															for="emailId">
+															Email*</label>
+													</div>
+													<div class="help-block"><span class="errmsg">Vui lòng nhập email hợp
+															lệ</span> <span class="glyphicon"></span></div>
+												</div>
+												<div class="row posrel" style="display:block">
+													<div class="col-md-4 col-xs-3 no-space">
+														<div class="floatingwrap ccode rfrmsuc">
+															<div class="form-group">
+																<input id="dialCode" name="dialCode"
+																	class=" form-control" readonly="readonly"
+																	type="text" value="+84" /><label
+																	class="control-label tpzro hdn_lbl" for="dialCode">
+																	Dial code*</label>
+															</div>
+														</div>
+													</div>
+													<div class="col-md-8 col-xs-9 no-space ">
+														<div class="floatingwrap ">
+															<div class="form-group">
+																<input id="phoneNo" name="phoneNo" class=" form-control"
+																	type="text" value="" autocomplete="off" /><label
+																	class="control-label " for="phoneNo">
+																	Điện thoại di động*</label>
+															</div>
+															<div class="help-block">
+																<span class="errmsg">
+																	<span id="phn_null">Vui lòng nhập số điện thoại hợp
+																		lệ</span>
+																	<span id="phn_len">Vui lòng nhập số điện thoại hợp
+																		lệ</span>
+																</span>
+																<span class="glyphicon"></span>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="row opnfrm_stdycntry">
+													<div class="floatingwrap frmdpdn selcntry ">
+														<div class="form-group">
+															<select id="preferedStudyDestination"
+																name="preferedStudyDestination"
+																class="form-control floatselect ui dropdown selection">
+																<option value="" selected="selected">
+																	Vui lòng chọn</option>
+																<option value="AU">Úc</option>
+																<option value="CA">Canada</option>
+																<option value="NZ">New Zealand</option>
+																<option value="GB">Anh</option>
+																<option value="US">Mỹ</option>
+																<option value="IE">Ireland</option>
+															</select><label class="control-label required"
+																for="preferedStudyDestination">
+																Quốc gia bạn muốn du học</label>
+														</div>
+														<div class="help-block"><span class="errmsg">Vui lòng chọn quốc
+																gia
+																bạn muốn du học</span></div>
+													</div>
+												</div>
+												<div class="floatingwrap frmdpdn opnfrm_stdyr">
+													<div class="form-group">
+														<select id="preferedStudyPlanDate" name="preferedStudyPlanDate"
 															class="form-control floatselect ui dropdown selection">
 															<option value="" selected="selected">
 																Vui lòng chọn</option>
-															<option value="AU">Úc</option>
-															<option value="CA">Canada</option>
-															<option value="NZ">New Zealand</option>
-															<option value="GB">Anh</option>
-															<option value="US">Mỹ</option>
-															<option value="IE">Ireland</option>
+															<option value="Jun-2022">Jun 2022</option>
+															<option value="Jul-2022">Jul 2022</option>
+															<option value="Aug-2022">Aug 2022</option>
+															<option value="Sep-2022">Sep 2022</option>
+															<option value="Oct-2022">Oct 2022</option>
+															<option value="Nov-2022">Nov 2022</option>
+															<option value="Dec-2022">Dec 2022</option>
+															<option value="Jan-2023">Jan 2023</option>
+															<option value="Feb-2023">Feb 2023</option>
+															<option value="Mar-2023">Mar 2023</option>
+															<option value="Apr-2023">Apr 2023</option>
+															<option value="May-2023">May 2023</option>
+															<option value="Jun-2023">Jun 2023</option>
+															<option value="Jul-2023">Jul 2023</option>
+															<option value="Aug-2023">Aug 2023</option>
+															<option value="Sep-2023">Sep 2023</option>
+															<option value="Oct-2023">Oct 2023</option>
+															<option value="Nov-2023">Nov 2023</option>
+															<option value="Dec-2023">Dec 2023</option>
+															<option value="Jan-2024">Jan 2024</option>
+															<option value="Feb-2024">Feb 2024</option>
+															<option value="Mar-2024">Mar 2024</option>
+															<option value="Apr-2024">Apr 2024</option>
+															<option value="May-2024">May 2024</option>
+															<option value="Jun-2024">Jun 2024</option>
+															<option value="Jul-2024">Jul 2024</option>
+															<option value="Aug-2024">Aug 2024</option>
+															<option value="Sep-2024">Sep 2024</option>
+															<option value="Oct-2024">Oct 2024</option>
+															<option value="Nov-2024">Nov 2024</option>
+															<option value="Dec-2024">Dec 2024</option>
+															<option value="Jan-2025">Jan 2025</option>
+															<option value="Feb-2025">Feb 2025</option>
+															<option value="Mar-2025">Mar 2025</option>
+															<option value="Apr-2025">Apr 2025</option>
+															<option value="May-2025">May 2025</option>
+															<option value="Jun-2025">Jun 2025</option>
+															<option value="Jul-2025">Jul 2025</option>
+															<option value="Aug-2025">Aug 2025</option>
+															<option value="Sep-2025">Sep 2025</option>
+															<option value="Oct-2025">Oct 2025</option>
+															<option value="Nov-2025">Nov 2025</option>
+															<option value="Dec-2025">Dec 2025</option>
+															<option value="Jan-2026">Jan 2026</option>
+															<option value="Feb-2026">Feb 2026</option>
+															<option value="Mar-2026">Mar 2026</option>
+															<option value="Apr-2026">Apr 2026</option>
+															<option value="May-2026">May 2026</option>
+															<option value="Jun-2026">Jun 2026</option>
+															<option value="Jul-2026">Jul 2026</option>
+															<option value="Aug-2026">Aug 2026</option>
+															<option value="Sep-2026">Sep 2026</option>
+															<option value="Oct-2026">Oct 2026</option>
+															<option value="Nov-2026">Nov 2026</option>
+															<option value="Dec-2026">Dec 2026</option>
+															<option value="Jan-2027">Jan 2027</option>
+															<option value="Feb-2027">Feb 2027</option>
+															<option value="Mar-2027">Mar 2027</option>
+															<option value="Apr-2027">Apr 2027</option>
 														</select><label class="control-label required"
-															for="preferedStudyDestination">
-															Quốc gia bạn muốn du học</label>
+															for="preferedStudyPlanDate">
+															Bạn dự định du học khi nào?</label>
 													</div>
-													<div class="help-block"><span class="errmsg">Vui lòng chọn quốc gia
-															bạn muốn du học</span></div>
+													<div class="help-block"><span class="errmsg">Khi nào bạn sẽ du
+															học?</span></div>
 												</div>
-											</div>
-											<div class="floatingwrap frmdpdn opnfrm_stdyr">
-												<div class="form-group">
-													<select id="preferedStudyPlanDate" name="preferedStudyPlanDate"
-														class="form-control floatselect ui dropdown selection">
-														<option value="" selected="selected">
-															Vui lòng chọn</option>
-														<option value="Jun-2022">Jun 2022</option>
-														<option value="Jul-2022">Jul 2022</option>
-														<option value="Aug-2022">Aug 2022</option>
-														<option value="Sep-2022">Sep 2022</option>
-														<option value="Oct-2022">Oct 2022</option>
-														<option value="Nov-2022">Nov 2022</option>
-														<option value="Dec-2022">Dec 2022</option>
-														<option value="Jan-2023">Jan 2023</option>
-														<option value="Feb-2023">Feb 2023</option>
-														<option value="Mar-2023">Mar 2023</option>
-														<option value="Apr-2023">Apr 2023</option>
-														<option value="May-2023">May 2023</option>
-														<option value="Jun-2023">Jun 2023</option>
-														<option value="Jul-2023">Jul 2023</option>
-														<option value="Aug-2023">Aug 2023</option>
-														<option value="Sep-2023">Sep 2023</option>
-														<option value="Oct-2023">Oct 2023</option>
-														<option value="Nov-2023">Nov 2023</option>
-														<option value="Dec-2023">Dec 2023</option>
-														<option value="Jan-2024">Jan 2024</option>
-														<option value="Feb-2024">Feb 2024</option>
-														<option value="Mar-2024">Mar 2024</option>
-														<option value="Apr-2024">Apr 2024</option>
-														<option value="May-2024">May 2024</option>
-														<option value="Jun-2024">Jun 2024</option>
-														<option value="Jul-2024">Jul 2024</option>
-														<option value="Aug-2024">Aug 2024</option>
-														<option value="Sep-2024">Sep 2024</option>
-														<option value="Oct-2024">Oct 2024</option>
-														<option value="Nov-2024">Nov 2024</option>
-														<option value="Dec-2024">Dec 2024</option>
-														<option value="Jan-2025">Jan 2025</option>
-														<option value="Feb-2025">Feb 2025</option>
-														<option value="Mar-2025">Mar 2025</option>
-														<option value="Apr-2025">Apr 2025</option>
-														<option value="May-2025">May 2025</option>
-														<option value="Jun-2025">Jun 2025</option>
-														<option value="Jul-2025">Jul 2025</option>
-														<option value="Aug-2025">Aug 2025</option>
-														<option value="Sep-2025">Sep 2025</option>
-														<option value="Oct-2025">Oct 2025</option>
-														<option value="Nov-2025">Nov 2025</option>
-														<option value="Dec-2025">Dec 2025</option>
-														<option value="Jan-2026">Jan 2026</option>
-														<option value="Feb-2026">Feb 2026</option>
-														<option value="Mar-2026">Mar 2026</option>
-														<option value="Apr-2026">Apr 2026</option>
-														<option value="May-2026">May 2026</option>
-														<option value="Jun-2026">Jun 2026</option>
-														<option value="Jul-2026">Jul 2026</option>
-														<option value="Aug-2026">Aug 2026</option>
-														<option value="Sep-2026">Sep 2026</option>
-														<option value="Oct-2026">Oct 2026</option>
-														<option value="Nov-2026">Nov 2026</option>
-														<option value="Dec-2026">Dec 2026</option>
-														<option value="Jan-2027">Jan 2027</option>
-														<option value="Feb-2027">Feb 2027</option>
-														<option value="Mar-2027">Mar 2027</option>
-														<option value="Apr-2027">Apr 2027</option>
-													</select><label class="control-label required"
-														for="preferedStudyPlanDate">
-														Bạn dự định du học khi nào?</label>
-												</div>
-												<div class="help-block"><span class="errmsg">Khi nào bạn sẽ du
-														học?</span></div>
-											</div>
-											<div class="row dynamic-frm-fields">
-												<div class="floatingwrap frmdpdn">
-													<div class="form-group">
+												<div class="row dynamic-frm-fields">
+													<div class="floatingwrap frmdpdn">
 														<div class="form-group">
-															<select id="officeName" name="officeName"
-																class="form-control floatselect ui fluid dropdown selection">
-																<option value="" selected="selected">
-																	Vui lòng chọn</option>
-																<option id="person_0" value="Can Tho">Cần Thơ - Hòa
-																	Bình, Q. Ninh Kiều</option>
-																<option id="person_1" value="Da Nang">Đà Nẵng - Ngô Gia
-																	Tự, Q. Hải Châu</option>
-																<option id="person_2" value="Hanoi - Ngoc Khanh">Hà Nội
-																	- Ngọc Khánh, Q. Ba Đình</option>
-																<option id="person_3" value="Hanoi - Trieu Viet Vuong">
-																	Hà Nội - Triệu Việt Vương, Q. Hai Bà Trưng</option>
-																<option id="person_4"
-																	value="Ho Chi Minh City - Hung Vuong">TP.HCM – Trần
-																	Nhân Tôn, Quận 5</option>
-																<option id="person_5"
-																	value="Ho Chi Minh City - Mac Dinh Chi">TP.HCM - Mạc
-																	Đĩnh Chi, Quận 1</option>
-																<option id="person_6"
-																	value="Ho Chi Minh City - Nguyen Thi Thap">Ho Chi
-																	Minh City - Nguyen Thi Thap</option>
-																<option id="null_option" value="null_option">Văn phòng
-																	trực tuyến</option>
-																<option id="virtual_7" value="Northern - Hai Phong">Miền
-																	Bắc - Hải Phòng</option>
-																<option id="virtual_8" value="Northern - Other cities">
-																	Miền Bắc - Tỉnh thành khác</option>
-																<option id="virtual_9" value="Northern - Quang Ninh">
-																	Miền Bắc - Quảng Ninh</option>
-																<option id="virtual_10" value="Southern - Bien Hoa">Miền
-																	Nam - Biên Hòa</option>
-																<option id="virtual_11" value="Southern - Binh Duong">
-																	Miền Nam - Bình Dương</option>
-																<option id="virtual_12" value="Southern - Other cities">
-																	Miền Nam - Tỉnh thành khác</option>
-																<option id="virtual_13" value="Southern - Vung Tau">Miền
-																	Nam - Vũng Tàu</option>
-															</select><label class="control-label required"
-																for="officeName">
-																Văn phòng IDP gần nhất</label>
+															<div class="form-group">
+																<select id="officeName" name="officeName"
+																	class="form-control floatselect ui fluid dropdown selection">
+																	<option value="" selected="selected">
+																		Vui lòng chọn</option>
+																	<option id="person_0" value="Can Tho">Cần Thơ - Hòa
+																		Bình, Q. Ninh Kiều</option>
+																	<option id="person_1" value="Da Nang">Đà Nẵng - Ngô
+																		Gia
+																		Tự, Q. Hải Châu</option>
+																	<option id="person_2" value="Hanoi - Ngoc Khanh">Hà
+																		Nội
+																		- Ngọc Khánh, Q. Ba Đình</option>
+																	<option id="person_3"
+																		value="Hanoi - Trieu Viet Vuong">
+																		Hà Nội - Triệu Việt Vương, Q. Hai Bà Trưng
+																	</option>
+																	<option id="person_4"
+																		value="Ho Chi Minh City - Hung Vuong">TP.HCM –
+																		Trần
+																		Nhân Tôn, Quận 5</option>
+																	<option id="person_5"
+																		value="Ho Chi Minh City - Mac Dinh Chi">TP.HCM -
+																		Mạc
+																		Đĩnh Chi, Quận 1</option>
+																	<option id="person_6"
+																		value="Ho Chi Minh City - Nguyen Thi Thap">Ho
+																		Chi
+																		Minh City - Nguyen Thi Thap</option>
+																	<option id="null_option" value="null_option">Văn
+																		phòng
+																		trực tuyến</option>
+																	<option id="virtual_7" value="Northern - Hai Phong">
+																		Miền
+																		Bắc - Hải Phòng</option>
+																	<option id="virtual_8"
+																		value="Northern - Other cities">
+																		Miền Bắc - Tỉnh thành khác</option>
+																	<option id="virtual_9"
+																		value="Northern - Quang Ninh">
+																		Miền Bắc - Quảng Ninh</option>
+																	<option id="virtual_10" value="Southern - Bien Hoa">
+																		Miền
+																		Nam - Biên Hòa</option>
+																	<option id="virtual_11"
+																		value="Southern - Binh Duong">
+																		Miền Nam - Bình Dương</option>
+																	<option id="virtual_12"
+																		value="Southern - Other cities">
+																		Miền Nam - Tỉnh thành khác</option>
+																	<option id="virtual_13" value="Southern - Vung Tau">
+																		Miền
+																		Nam - Vũng Tàu</option>
+																</select><label class="control-label required"
+																	for="officeName">
+																	Văn phòng IDP gần nhất</label>
+															</div>
+															<div class="help-block"><span class="errmsg">Vui lòng chọn
+																	văn
+																	phòng IDP gần nhất</span></div>
 														</div>
-														<div class="help-block"><span class="errmsg">Vui lòng chọn văn
-																phòng IDP gần nhất</span></div>
 													</div>
 												</div>
-											</div>
-											<div class="row dynamic-frm-fields" id="preferredCounsellingMode_div">
-												<div class="floatingwrap frmdpdn">
-													<div class="form-group">
+												<div class="row dynamic-frm-fields" id="preferredCounsellingMode_div">
+													<div class="floatingwrap frmdpdn">
 														<div class="form-group">
-															<select id="preferredCounsellingMode"
-																name="preferredCounsellingMode"
-																class="form-control floatselect ui fluid dropdown selection">
+															<div class="form-group">
+																<select id="preferredCounsellingMode"
+																	name="preferredCounsellingMode"
+																	class="form-control floatselect ui fluid dropdown selection">
+																	<option value="" selected="selected">
+																		Vui lòng chọn</option>
+																	<option value="In-person">Trực tiếp</option>
+																	<option value="Virtual Counselling">Tư vấn online
+																	</option>
+																</select><label class="control-label required"
+																	for="preferredCounsellingMode">
+																	Loại hình tư vấn bạn lựa chọn</label>
+															</div>
+															<div class="help-block"><span class="errmsg">Vui lòng chọn
+																	nội
+																	dung bạn cần tư vấn. Bạn có thể thay đổi sau</span>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="row dynamic-frm-fields">
+													<div class="floatingwrap frmdpdn ">
+														<div class="form-group">
+															<select id="studyLevel" name="studyLevel"
+																class="form-control floatselect ui dropdown selection">
 																<option value="" selected="selected">
 																	Vui lòng chọn</option>
-																<option value="In-person">Trực tiếp</option>
-																<option value="Virtual Counselling">Tư vấn online
+																<option value="DOCTORATE">Tiến sỹ</option>
+																<option value="POSTGRADUATE">Sau đại học</option>
+																<option value="UNDERGRADUATE">Đại học</option>
+																<option value="UNIVERSITYPREPARATION">Dự bị đại học
 																</option>
+																<option value="VOCATIONAL">Học nghề</option>
+																<option value="ENGLISHLANGUAGE">Tiếng Anh</option>
+																<option value="SCHOOL">Trung học</option>
 															</select><label class="control-label required"
-																for="preferredCounsellingMode">
-																Loại hình tư vấn bạn lựa chọn</label>
+																for="studyLevel">
+																Bậc học quan tâm</label>
 														</div>
-														<div class="help-block"><span class="errmsg">Vui lòng chọn nội
-																dung bạn cần tư vấn. Bạn có thể thay đổi sau</span>
-														</div>
+														<div class="help-block"><span class="errmsg">Vui lòng chọn bậc
+																học
+																quan tâm</span></div>
 													</div>
 												</div>
-											</div>
-											<div class="row dynamic-frm-fields">
-												<div class="floatingwrap frmdpdn ">
+												<div class="floatingwrap frmdpdn pref-time">
 													<div class="form-group">
-														<select id="studyLevel" name="studyLevel"
+														<select id="preferredContactTime" name="preferredContactTime"
 															class="form-control floatselect ui dropdown selection">
-															<option value="" selected="selected">
-																Vui lòng chọn</option>
-															<option value="DOCTORATE">Tiến sỹ</option>
-															<option value="POSTGRADUATE">Sau đại học</option>
-															<option value="UNDERGRADUATE">Đại học</option>
-															<option value="UNIVERSITYPREPARATION">Dự bị đại học</option>
-															<option value="VOCATIONAL">Học nghề</option>
-															<option value="ENGLISHLANGUAGE">Tiếng Anh</option>
-															<option value="SCHOOL">Trung học</option>
-														</select><label class="control-label required" for="studyLevel">
-															Bậc học quan tâm</label>
+															<option value="anytime">Bất cứ lúc nào</option>
+															<option value="9:00 am to 1:00 pm">9:00 am to 1:00 pm
+															</option>
+															<option value="1.00 pm to 6.00 pm">1.00 pm to 6.00 pm
+															</option>
+														</select><label class="control-label "
+															for="preferredContactTime">
+															Chúng tôi có thể gọi lại cho bạn lúc nào?*</label>
 													</div>
-													<div class="help-block"><span class="errmsg">Vui lòng chọn bậc học
-															quan tâm</span></div>
 												</div>
-											</div>
-											<div class="floatingwrap frmdpdn pref-time">
-												<div class="form-group">
-													<select id="preferredContactTime" name="preferredContactTime"
-														class="form-control floatselect ui dropdown selection">
-														<option value="anytime">Bất cứ lúc nào</option>
-														<option value="9:00 am to 1:00 pm">9:00 am to 1:00 pm</option>
-														<option value="1.00 pm to 6.00 pm">1.00 pm to 6.00 pm</option>
-													</select><label class="control-label " for="preferredContactTime">
-														Chúng tôi có thể gọi lại cho bạn lúc nào?*</label>
+												<div class="checkbox chk_title">IDP cam kết không chia sẻ thông tin
+													của
+													bạn cho bất kỳ bên thứ ba nào:</div>
+												<div class="checkbox">
+													<input type="checkbox" class="styled-checkbox"
+														id="termsandConditionsAcceptance"
+														name="termsandConditionsAcceptance" />
+													<label for="termsandConditionsAcceptance">
+														Tôi đồng ý <a target="_blank"
+															href="/vietnam/terms-of-use/">Các
+															điều khoản</a> và <a target="_blank"
+															href="/vietnam/privacy-policy/">điều kiện bảo mật thông
+															tin</a> của IDP.</label>
+													<div class="help-block"><span class="errmsg">Vui lòng xác nhận bạn
+															đồng
+															ý với các điều khoản chính sách bảo mật của chúng tôi</span>
+													</div>
 												</div>
-											</div>
-											<div class="checkbox chk_title">IDP cam kết không chia sẻ thông tin của
-												bạn cho bất kỳ bên thứ ba nào:</div>
-											<div class="checkbox">
-												<input type="checkbox" class="styled-checkbox"
-													id="termsandConditionsAcceptance"
-													name="termsandConditionsAcceptance" />
-												<label for="termsandConditionsAcceptance">
-													Tôi đồng ý <a target="_blank" href="/vietnam/terms-of-use/">Các
-														điều khoản</a> và <a target="_blank"
-														href="/vietnam/privacy-policy/">điều kiện bảo mật thông
-														tin</a> của IDP.</label>
-												<div class="help-block"><span class="errmsg">Vui lòng xác nhận bạn đồng
-														ý với các điều khoản chính sách bảo mật của chúng tôi</span>
+												<div class="checkbox">
+													<input type="checkbox" name="contactMethod" id="contactMethod"
+														class="styled-checkbox" />
+													<label for="contactMethod">Vui lòng liên hệ với tôi qua điện thoại,
+														email hoặc SMS để hỗ trợ theo yêu cầu của tôi</label>
+													<div class="help-block"><span class="errmsg">Vui lòng đồng ý để IDP
+															liên
+															hệ với bạn bằng điện thoại hoặc email để giải đáp các thắc
+															mắc</span></div>
 												</div>
-											</div>
-											<div class="checkbox">
-												<input type="checkbox" name="contactMethod" id="contactMethod"
-													class="styled-checkbox" />
-												<label for="contactMethod">Vui lòng liên hệ với tôi qua điện thoại,
-													email hoặc SMS để hỗ trợ theo yêu cầu của tôi</label>
-												<div class="help-block"><span class="errmsg">Vui lòng đồng ý để IDP liên
-														hệ với bạn bằng điện thoại hoặc email để giải đáp các thắc
-														mắc</span></div>
-											</div>
-											<div class="checkbox">
-												<input type="checkbox" name="marketingPreferenceAcceptance"
-													id="marketingPreferenceAcceptance" class="styled-checkbox" />
-												<label for="marketingPreferenceAcceptance">
-													Tôi muốn nhận thông tin và ưu đãi cập nhật từ IDP</label>
-											</div>
-											<input type="hidden" id="enquiryType" name="enquiryType" value="GENERAL">
-											<input type="hidden" id="page" name="page" value="Homepage">
-											<input type="hidden" id="suborderId" name="subOrderId" value="" />
-											<input type="hidden" id="idpGeoIpEnquiryCountry"
-												name="idpGeoIpEnquiryCountry" value="vietnam">
-											<input type="hidden" id="popUp_hidden" name="popUp_hidden" value="">
-											<input type="hidden" id="campaignName" name="campaignName" value="">
-											<input type="hidden" id="sourceName" name="sourceName" value="">
-											<input type="hidden" id="enquiryVerificationType"
-												name="enquiryVerificationType" value="NO">
-											<input type="hidden" id="enquiryRandomNumber" name="enquiryRandomNumber"
-												value="4721">
-											<input type="hidden" id="otpVerificationStatus" name="otpVerificationStatus"
-												value="">
-											<input type="hidden" id="mobileVerificationStatus"
-												name="mobileVerificationStatus" value="">
-											<input type="hidden" id="ajaxEnquiryCall" name="captchaEnquiryError"
-												value="">
-											<input type="hidden" id="studentEssentialFlash" value="">
-											<input type="hidden" id="popupform" value="">
-											<input type="hidden" id="callfromajaxenquiryform" name="ajaxCallEnquiryForm"
-												value="">
-											<input type="hidden" id="verifyMobileNumber" name="verifyMobileNumber"
-												value="">
-											<input type="hidden" id="phoneLength" name="phoneLength" value="10,11" />
-											<button type="button" id="enquriySubmitBtn"
-												class="btn btn-default vwo_enquiry_btn"><span>Liên hệ ngay</span><span
-													class="glyphicon glyphicon-menu-right pull-right"></span></button>
-										</form>
+												<div class="checkbox">
+													<input type="checkbox" name="marketingPreferenceAcceptance"
+														id="marketingPreferenceAcceptance" class="styled-checkbox" />
+													<label for="marketingPreferenceAcceptance">
+														Tôi muốn nhận thông tin và ưu đãi cập nhật từ IDP</label>
+												</div>
+												<input type="hidden" id="enquiryType" name="enquiryType"
+													value="GENERAL">
+												<input type="hidden" id="page" name="page" value="Homepage">
+												<input type="hidden" id="suborderId" name="subOrderId" value="" />
+												<input type="hidden" id="idpGeoIpEnquiryCountry"
+													name="idpGeoIpEnquiryCountry" value="vietnam">
+												<input type="hidden" id="popUp_hidden" name="popUp_hidden" value="">
+												<input type="hidden" id="campaignName" name="campaignName" value="">
+												<input type="hidden" id="sourceName" name="sourceName" value="">
+												<input type="hidden" id="enquiryVerificationType"
+													name="enquiryVerificationType" value="NO">
+												<input type="hidden" id="enquiryRandomNumber" name="enquiryRandomNumber"
+													value="4721">
+												<input type="hidden" id="otpVerificationStatus"
+													name="otpVerificationStatus" value="">
+												<input type="hidden" id="mobileVerificationStatus"
+													name="mobileVerificationStatus" value="">
+												<input type="hidden" id="ajaxEnquiryCall" name="captchaEnquiryError"
+													value="">
+												<input type="hidden" id="studentEssentialFlash" value="">
+												<input type="hidden" id="popupform" value="">
+												<input type="hidden" id="callfromajaxenquiryform"
+													name="ajaxCallEnquiryForm" value="">
+												<input type="hidden" id="verifyMobileNumber" name="verifyMobileNumber"
+													value="">
+												<input type="hidden" id="phoneLength" name="phoneLength"
+													value="10,11" />
+												<button type="button" id="enquriySubmitBtn"
+													class="btn btn-default vwo_enquiry_btn"><span>Liên hệ
+														ngay</span><span
+														class="glyphicon glyphicon-menu-right pull-right"></span></button>
+											</form>
+										</div>
 									</div>
 								</div>
 
@@ -2010,24 +2044,129 @@
 							<div class="col-xs-12 component-wrapper">
 								<div class="choosing-course-parent"><span class="content">Học sinh của IDP nói
 										gì?</span>
-									<div class="midSectionParent">
-										<div class="choosing-course"><span class="student-course">Trần Ngọc
-												Nam</span><span class="courseContent">"Đây là lần thứ 2 mình nhờ IDP hỗ
-												trợ hồ sơ đi Anh sau khi tốt nghiệp tại Úc, tất cả đều rất thuận lợi từ
-												khâu chuẩn bị đến hoàn tất thủ tục."</span></div>
-										<div class="choosing-course"><span class="student-course">Đinh Phương
-												Nguyên</span>
-											<span class="courseContent">"IDP làm hồ sơ rất kỹ và các anh chị tư vấn viên
-												rất nhiệt
-												tình và thân thiện trong quá trình hỗ trợ cho mình. Xin cảm ơn
-												IDP."</span>
+									<section id="testimonials" class="testimonials">
+										<div class="container">
+
+											<div class="testimonials-slider swiper" data-aos="fade-up"
+												data-aos-delay="100">
+												<div class="swiper-wrapper">
+
+													<div class="swiper-slide">
+														<div class="testimonial-wrap">
+															<div class="testimonial-item">
+																<img src="assets/img/testimonials/testimonials-1.jpg"
+																	class="testimonial-img" alt="">
+																<h3>Saul Goodman</h3>
+																<h4>Ceo &amp; Founder</h4>
+																<p>
+																	<i
+																		class="bx bxs-quote-alt-left quote-icon-left"></i>
+																	Proin iaculis purus consequat sem cure digni ssim
+																	donec porttitora entum
+																	suscipit rhoncus. Accusantium quam, ultricies eget
+																	id, aliquam eget nibh et.
+																	Maecen aliquam, risus at semper.
+																	<i
+																		class="bx bxs-quote-alt-right quote-icon-right"></i>
+																</p>
+															</div>
+														</div>
+													</div>
+
+													<div class="swiper-slide">
+														<div class="testimonial-wrap">
+															<div class="testimonial-item">
+																<img src="assets/img/testimonials/testimonials-2.jpg"
+																	class="testimonial-img" alt="">
+																<h3>Sara Wilsson</h3>
+																<h4>Designer</h4>
+																<p>
+																	<i
+																		class="bx bxs-quote-alt-left quote-icon-left"></i>
+																	Export tempor illum tamen malis malis eram quae
+																	irure esse labore quem cillum
+																	quid cillum eram malis quorum velit fore eram velit
+																	sunt aliqua noster fugiat
+																	irure amet legam anim culpa.
+																	<i
+																		class="bx bxs-quote-alt-right quote-icon-right"></i>
+																</p>
+															</div>
+														</div>
+													</div>
+
+													<div class="swiper-slide">
+														<div class="testimonial-wrap">
+															<div class="testimonial-item">
+																<img src="assets/img/testimonials/testimonials-3.jpg"
+																	class="testimonial-img" alt="">
+																<h3>Jena Karlis</h3>
+																<h4>Store Owner</h4>
+																<p>
+																	<i
+																		class="bx bxs-quote-alt-left quote-icon-left"></i>
+																	Enim nisi quem export duis labore cillum quae magna
+																	enim sint quorum nulla quem
+																	veniam duis minim tempor labore quem eram duis
+																	noster aute amet eram fore quis
+																	sint minim.
+																	<i
+																		class="bx bxs-quote-alt-right quote-icon-right"></i>
+																</p>
+															</div>
+														</div>
+													</div>
+
+													<div class="swiper-slide">
+														<div class="testimonial-wrap">
+															<div class="testimonial-item">
+																<img src="assets/img/testimonials/testimonials-4.jpg"
+																	class="testimonial-img" alt="">
+																<h3>Matt Brandon</h3>
+																<h4>Freelancer</h4>
+																<p>
+																	<i
+																		class="bx bxs-quote-alt-left quote-icon-left"></i>
+																	Fugiat enim eram quae cillum dolore dolor amet nulla
+																	culpa multos export minim
+																	fugiat minim velit minim dolor enim duis veniam
+																	ipsum anim magna sunt elit fore
+																	quem dolore labore illum veniam.
+																	<i
+																		class="bx bxs-quote-alt-right quote-icon-right"></i>
+																</p>
+															</div>
+														</div>
+													</div>
+
+													<div class="swiper-slide">
+														<div class="testimonial-wrap">
+															<div class="testimonial-item">
+																<img src="assets/img/testimonials/testimonials-5.jpg"
+																	class="testimonial-img" alt="">
+																<h3>John Larson</h3>
+																<h4>Entrepreneur</h4>
+																<p>
+																	<i
+																		class="bx bxs-quote-alt-left quote-icon-left"></i>
+																	Quis quorum aliqua sint quem legam fore sunt eram
+																	irure aliqua veniam tempor
+																	noster veniam enim culpa labore duis sunt culpa
+																	nulla illum cillum fugiat legam
+																	esse veniam culpa fore nisi cillum quid.
+																	<i
+																		class="bx bxs-quote-alt-right quote-icon-right"></i>
+																</p>
+															</div>
+														</div>
+													</div>
+
+												</div>
+												<div class="swiper-pagination"></div>
+											</div>
+
 										</div>
-										<div class="choosing-course"><span class="student-course">Thu Thảo</span> <span
-												class="courseContent">"Mình và gia đình rất hài lòng về dịch vụ của IDP
-												vì tư vấn viên IDP đã hỗ trợ cho mình từ A đến Z: từ tìm trường, đóng
-												học phí, nộp hồ sơ xin visa du học, mua vé máy bay và kiếm nhà
-												ở."</span></div>
-									</div>
+									</section>
 								</div>
 							</div>
 						</div>
@@ -2141,208 +2280,6 @@
 									</div>
 								</div>
 							</div>
-							<div class="  col-xs-12 col-sm-12 col-md-12 no-space component-wrapper">
-								<div class="">
-									<div class="home-page">
-										<div class="row articles-events-section">
-											<div class="articles-wrapper">
-												<div class="articles-mid-left">
-													<img src="./assets/img/highlights/CAN-Congrats-Visa-250-V2.jpg"
-														alt="">
-												</div>
-												<div class="articles-mid-right">
-													<h3 class="name">
-														<a target="" href="/vietnam/blog/canada/re-open-in-oct-2020/">
-															Canada mở cửa biên giới cho sinh viên quốc tế</a>
-													</h3>
-													<div class="description">Chính phủ Canada vừa chính thức công bố nới
-														lỏng hạn chế đi lại đối với sinh viên quốc tế bắt đầu từ
-														20/10/2020</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="  col-xs-12 col-sm-12 col-md-12 no-space component-wrapper">
-								<div class="">
-									<div class="home-page">
-										<div class="row articles-events-section">
-											<div class="articles-wrapper">
-												<div class="articles-mid-left">
-													<img src="./assets/img/highlights/aus-open-2021.png"
-														alt="aus-open-2021.png">
-												</div>
-												<div class="articles-mid-right">
-													<h3 class="name">
-														<a target=""
-															href="/vietnam/blog/au/open-border-dec-2021/">Australia mở
-															cửa trở lại cho sinh viên quốc tế từ 15/12</a>
-													</h3>
-													<div class="description">Sẵn sàng nộp đơn cho kỳ nhập học 2022!
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="  col-xs-12 col-sm-12 col-md-12 no-space component-wrapper">
-								<div class="">
-									<div class="home-page">
-										<div class="row articles-events-section">
-											<div class="articles-wrapper">
-												<div class="articles-mid-left">
-													<img src="./assets/img/highlights/scholarship-pod1d-V2.jpg" alt="">
-												</div>
-												<div class="articles-mid-right">
-													<h3 class="name">
-														<a target=""
-															href="https://www.idp.com/vietnam/scholarships/">học bổng du
-															học</a>
-													</h3>
-													<div class="description">Danh sách học bổng du học Úc, Canada, Anh,
-														Mỹ & New Zealand</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="  col-xs-12 col-sm-12 col-md-12 no-space component-wrapper">
-								<div class="">
-									<div class="home-page">
-										<div class="row articles-events-section">
-											<div class="articles-wrapper">
-												<div class="articles-mid-left">
-													<img src="./assets/img/highlights/IMG-6767-300.png"
-														alt="IMG_6767-300.png">
-												</div>
-												<div class="articles-mid-right">
-													<h3 class="name">
-														<a target=""
-															href="https://www.idp.com/vietnam/ielts/ielts-partners/neu/">Trường
-															Đại học Kinh Tế Quốc Dân và tổ chức giáo dục IDP</a>
-													</h3>
-													<div class="description">chính thức ký kết biên bản ghi nhớ hợp
-														tác</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="  col-xs-12 col-sm-12 col-md-12 no-space component-wrapper">
-								<div class="">
-									<div class="home-page">
-										<div class="row articles-events-section">
-											<div class="articles-wrapper">
-												<div class="articles-mid-left">
-													<img src="./assets/img/highlights/AUS-FLAG-V2.jpg" alt="">
-												</div>
-												<div class="articles-mid-right">
-													<h3 class="name">
-														<a target=""
-															href="https://www.idp.com/vietnam/blog/au/budget-to-study-in-australia/">Du
-															học Úc cần bao nhiêu tiền?</a>
-													</h3>
-													<div class="description">Tất tần tật các chi phí du học Úc bạn cần
-														biết</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="  col-xs-12 col-sm-12 col-md-12 no-space component-wrapper">
-								<div class="">
-									<div class="home-page">
-										<div class="row articles-events-section">
-											<div class="articles-wrapper">
-												<div class="articles-mid-left">
-													<img src="./assets/img/highlights/CAN-FLAG-V2.jpg" alt="">
-												</div>
-												<div class="articles-mid-right">
-													<h3 class="name">
-														<a target=""
-															href="https://www.idp.com/vietnam/blog/canada/how-much-does-it-cost-to-study-in-canada/">Du
-															học Canada bao nhiêu tiền?</a>
-													</h3>
-													<div class="description">Chi tiết về học phí & chi phí sinh hoạt tại
-														Canada</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="  col-xs-12 col-sm-12 col-md-12 no-space component-wrapper">
-								<div class="">
-									<div class="home-page">
-										<div class="row articles-events-section">
-											<div class="articles-wrapper">
-												<div class="articles-mid-left">
-													<img src="./assets/img/highlights/uk-flag-200-V2.jpg" alt="">
-												</div>
-												<div class="articles-mid-right">
-													<h3 class="name">
-														<a target=""
-															href="https://www.idp.com/vietnam/blog/uk/uk-expenses/">Du
-															học Anh cần bao nhiêu tiền?</a>
-													</h3>
-													<div class="description">Chi tiết về học phí & chi phí sinh hoạt tại
-														Anh</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="  col-xs-12 col-sm-12 col-md-12 no-space component-wrapper">
-								<div class="">
-									<div class="home-page">
-										<div class="row articles-events-section">
-											<div class="articles-wrapper">
-												<div class="articles-mid-left">
-													<img src="./assets/img/highlights/us-flag1-V2.jpg" alt="">
-												</div>
-												<div class="articles-mid-right">
-													<h3 class="name">
-														<a target="" href="/vietnam/blog/usa/budget-to-study-in-usa/">Du
-															học Mỹ cần bao nhiêu tiền?</a>
-													</h3>
-													<div class="description">Chi tiết về học phí & chi phí sinh hoạt tại
-														Mỹ</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="  col-xs-12 col-sm-12 col-md-12 no-space component-wrapper">
-								<div class="">
-									<div class="home-page">
-										<div class="row articles-events-section">
-											<div class="articles-wrapper">
-												<div class="articles-mid-left">
-													<img src="./assets/img/highlights/tu-van-du-hoc-V2.jpg" alt="">
-												</div>
-												<div class="articles-mid-right">
-													<h3 class="name">
-														<a target=""
-															href="/vietnam/blog/general/study-overseas-without-financial-proof-requirement/">Du
-															học nước nào MIỄN CHỨNG MINH TÀI CHÍNH?</a>
-													</h3>
-													<div class="description">Đây là top 3 quốc gia cho phép sinh viên
-														Việt Nam du học miễn chứng minh tài chính!</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="hero-images-box   row">
 						</div>
 					</div>
 					<div class="col-xs-12 col-sm-6 block-article">
@@ -3120,6 +3057,11 @@
 			</div>
 		</footer>
 	</main>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+	<script src="./assets/js/main.js"></script>
 </body>
 
 </html>
